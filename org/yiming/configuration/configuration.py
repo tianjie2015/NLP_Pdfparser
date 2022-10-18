@@ -10,4 +10,3 @@ WORDS = ["mission", "resilient", "sovereignty"]
 PHRASES = [
     ('mission', 'oriented')
 ]
-HEADERS = ['WORD/PHRASE', 'OCCURRENCES']

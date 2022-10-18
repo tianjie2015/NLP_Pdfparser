@@ -5,11 +5,13 @@ from multiprocessing import Pool
 from pathlib import Path
 
 from org.yiming.analyzer.word_count_analyzer import WordCountAnalyzer
-from org.yiming.configuration.configuration import FILE_NAMES, FOLDER, HEADERS, OUT_FOLDER, PHRASES, WORDS
+from org.yiming.configuration.configuration import FILE_NAMES, FOLDER, OUT_FOLDER, PHRASES, WORDS
 from org.yiming.executor.pre_executor import pre_execute
 from org.yiming.parser.pdf_parser import PdfParser
 
 NUMBER_OF_PROCESSOR_IN_POOL = 10
+
+HEADERS = ['WORD/PHRASE', 'OCCURRENCES']
 
 raw_parsers = {f_n: PdfParser(FOLDER + f_n) for f_n in FILE_NAMES}
 raw_analyzer = WordCountAnalyzer()
