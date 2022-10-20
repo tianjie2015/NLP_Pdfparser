@@ -18,4 +18,4 @@ How to install:
      * OUTPUT_FOLDER: folder to hold output files
      * WORDS: words to be counted
      * PHRASES: phrases to be counted
-7. Go to org.yiming.executor, then run executor.py
+7. Go to org.yiming, then run main.py
